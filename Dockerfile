@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
     git
 
-RUN python3 pip install PyYAML
+RUN pip install PyYAML
 
 COPY feed.py /usr/bin/feed.py
 
