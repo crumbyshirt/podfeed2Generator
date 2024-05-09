@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
     git
 
 # create virtual environment    
-RUN pythong3 -m venv /venv
+RUN python3 -m venv /venv
 RUN /vev/bin/pip install PyYAML
 
 COPY feed.py /usr/bin/feed.py
