@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y \
 
 # create virtual environment    
 RUN python3 -m venv /venv
-RUN /vev/bin/pip install PyYAML
+RUN /venv/bin/pip install PyYAML
 
 COPY feed.py /usr/bin/feed.py
 COPY entrypoint.sh /entrypoint.sh
