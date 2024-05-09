@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y \
 
 # create virtual environment    
 RUN python3 -m venv /venv
+# Install PyYAML within the virtual environment
 RUN /venv/bin/pip install PyYAML
 
 COPY feed.py /usr/bin/feed.py
